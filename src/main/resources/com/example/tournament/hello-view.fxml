@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="737.0" prefWidth="786.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tournament.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <TextField fx:id="title" alignment="TOP_CENTER" prefHeight="63.0" prefWidth="668.0" promptText="Enter tournament name" />
+      <Pane prefHeight="438.0" prefWidth="772.0">
+         <children>
+            <Label fx:id="game1" layoutX="25.0" layoutY="14.0" prefHeight="33.0" prefWidth="105.0" />
+            <Label fx:id="game2" layoutX="25.0" layoutY="48.0" prefHeight="33.0" prefWidth="105.0" />
+            <Label fx:id="game3" layoutX="25.0" layoutY="102.0" prefHeight="33.0" prefWidth="105.0" />
+            <Label fx:id="game4" layoutX="25.0" layoutY="136.0" prefHeight="33.0" prefWidth="105.0" />
+            <Label fx:id="game5" layoutX="25.0" layoutY="189.0" prefHeight="33.0" prefWidth="105.0" />
+            <Label fx:id="game6" layoutX="25.0" layoutY="223.0" prefHeight="33.0" prefWidth="105.0" />
+            <Label fx:id="semi3" layoutX="190.0" layoutY="222.0" prefHeight="33.0" prefWidth="105.0" />
+            <Label fx:id="semi2" layoutX="190.0" layoutY="74.0" prefHeight="33.0" prefWidth="105.0" />
+            <Label fx:id="semi1" layoutX="190.0" layoutY="40.0" prefHeight="33.0" prefWidth="105.0" />
+            <Label fx:id="game7" layoutX="25.0" layoutY="281.0" prefHeight="33.0" prefWidth="105.0" />
+            <Label fx:id="game8" layoutX="25.0" layoutY="315.0" prefHeight="33.0" prefWidth="105.0" />
+            <Label fx:id="semi4" layoutX="190.0" layoutY="256.0" prefHeight="33.0" prefWidth="105.0" />
+            <Label fx:id="final1" layoutX="345.0" layoutY="112.0" prefHeight="47.0" prefWidth="180.0" />
+            <Label fx:id="final2" layoutX="345.0" layoutY="160.0" prefHeight="48.0" prefWidth="180.0" />
+            <Label fx:id="winner" layoutX="560.0" layoutY="134.0" prefHeight="47.0" prefWidth="180.0" />
+            <Button fx:id="check1" layoutX="137.0" layoutY="18.0" mnemonicParsing="false" onAction="#resultsEntered1" text="✔" textFill="#00ff11" />
+            <Button fx:id="check2" layoutX="137.0" layoutY="52.0" mnemonicParsing="false" onAction="#resultsEntered2" text="✔" textFill="#00ff11" />
+            <Button fx:id="check3" layoutX="137.0" layoutY="106.0" mnemonicParsing="false" onAction="#resultsEntered3" text="✔" textFill="#00ff11" />
+            <Button fx:id="check4" layoutX="137.0" layoutY="140.0" mnemonicParsing="false" onAction="#resultsEntered4" text="✔" textFill="#00ff11" />
+            <Button fx:id="check5" layoutX="137.0" layoutY="193.0" mnemonicParsing="false" onAction="#resultsEntered5" text="✔" textFill="#00ff11" />
+            <Button fx:id="check6" layoutX="137.0" layoutY="226.0" mnemonicParsing="false" onAction="#resultsEntered6" text="✔" textFill="#00ff11" />
+            <Button fx:id="check7" layoutX="137.0" layoutY="285.0" mnemonicParsing="false" onAction="#resultsEntered7" text="✔" textFill="#00ff11" />
+            <Button fx:id="check8" layoutX="137.0" layoutY="319.0" mnemonicParsing="false" onAction="#resultsEntered8" text="✔" textFill="#00ff11" />
+            <Button fx:id="check9" layoutX="301.0" layoutY="44.0" mnemonicParsing="false" onAction="#resultsEntered9" text="✔" textFill="#00ff11" />
+            <Button fx:id="check10" layoutX="301.0" layoutY="78.0" mnemonicParsing="false" onAction="#resultsEntered10" text="✔" textFill="#00ff11" />
+            <Button fx:id="check11" layoutX="301.0" layoutY="226.0" mnemonicParsing="false" onAction="#resultsEntered11" text="✔" textFill="#00ff11" />
+            <Button fx:id="check12" layoutX="301.0" layoutY="260.0" mnemonicParsing="false" onAction="#resultsEntered12" text="✔" textFill="#00ff11" />
+            <Button fx:id="check13" layoutX="531.0" layoutY="124.0" mnemonicParsing="false" onAction="#resultsEntered13" text="✔" textFill="#00ff11" />
+            <Button fx:id="check14" layoutX="531.0" layoutY="172.0" mnemonicParsing="false" onAction="#resultsEntered14" text="✔" textFill="#00ff11" />
+         </children>
+      </Pane>
+      <Pane prefHeight="162.0" prefWidth="746.0">
+         <children>
+            <TextField fx:id="team1" layoutX="14.0" layoutY="2.0" onAction="#teamsEntered" promptText="Team 1" />
+            <TextField fx:id="team2" layoutX="14.0" layoutY="40.0" onAction="#teamsEntered" promptText="Team 2" />
+            <TextField fx:id="team3" layoutX="14.0" layoutY="78.0" onAction="#teamsEntered" promptText="Team 3" />
+            <TextField fx:id="team4" layoutX="14.0" layoutY="117.0" onAction="#teamsEntered" promptText="Team 4" />
+            <TextField fx:id="team5" layoutX="193.0" layoutY="2.0" onAction="#teamsEntered" promptText="Team 5" />
+            <TextField fx:id="team6" layoutX="193.0" layoutY="40.0" onAction="#teamsEntered" promptText="Team 6" />
+            <TextField fx:id="team7" layoutX="193.0" layoutY="78.0" onAction="#teamsEntered" promptText="Team 7" />
+            <TextField fx:id="team8" layoutX="193.0" layoutY="117.0" onAction="#teamsEntered" promptText="Team 8" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
